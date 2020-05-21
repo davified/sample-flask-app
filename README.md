@@ -10,7 +10,7 @@ Make a git fork of this repository through the Github user interface. This will 
 
 Then, make a clone of your fork of this repository to your local computer:
 
-```bash
+``` bash
 git clone https://github.com/[REPLACE-WITH-YOUR-FORK]/sample-flask-app.git
 ```
 
@@ -24,7 +24,7 @@ We will use [Hawkeye](https://github.com/hawkeyesec/scanner-cli) to scan secrets
 
 Run Hawkeye in Docker with:
 
-```console
+``` console
 docker run --rm -v $PWD:/target hawkeyesec/scanner-cli:latest
 ```
 
@@ -44,9 +44,9 @@ Add a benign change to the file by adding an exra line to the end of the file, o
 
 Save the file.
 
-3. Do a git add of the file. e.g. `git add web/config.py`.
+3. Do a git add of the file. e.g. `git add web/config.py` .
 
-Then do a git commit. e.g. `git commit -m "testing talisman"`
+Then do a git commit. e.g. `git commit -m "testing talisman"` 
 
 If all is working, you should be prompted by talisman about a potential secret being checked-in.
 
@@ -54,7 +54,7 @@ You can then unstage your changes and checkout all files to revert your local re
 
 For example:
 
-```sh
+``` sh
 git reset
 git checkout .
 ```
